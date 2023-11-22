@@ -38,6 +38,7 @@ body {
   left: 0;
   right: 0;
   z-index: 9999;
+  width: 100vw;
 }
 
 .navbar .navbar-logo {

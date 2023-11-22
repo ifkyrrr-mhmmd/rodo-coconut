@@ -17,7 +17,12 @@ document.addEventListener("click", function (r) {
   }
 });
 
-const send = document.querySelector(".cta");
+// untuk langsung ke menghubungi ke whatsapp
+const send = document.querySelector(".btn");
+const namaInput = document.getElementById("nama");
+const emailInput = document.getElementById("email");
+const pesananInput = document.getElementById("pesanan");
+
 send.addEventListener("click", function () {
-  send.href = "https://api.whatsapp.com/send?phone=6289516643936";
+  send.href = `https://api.whatsapp.com/send?phone=6289516643936&text=Nama: ${namaInput.value}%0AEmail: ${emailInput.value}%0AMembeli: ${pesananInput.value}`;
 });
